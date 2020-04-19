@@ -1,29 +1,39 @@
 package com.company;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
+import java.util.Scanner;
 
 public class matrix {
-    public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите количество строк матрицы");
-        int a = Integer.parseInt(reader.readLine());
+    public static void main (String[] args) {
+        int MAXVALUE = 35;
+        int sum = 0;
+        int count = 0;
+        int a, b;
 
-        System.out.println("Введите длинну матрицы");
-        int b = Integer.parseInt(reader.readLine());
+        Scanner in = new Scanner(System.in);
+        System.out.print("Введите количество строк массива: ");
+        a = in.nextInt();
 
-        int [][] twoDimArray = new int[a][b];
+        System.out.print("Введите количество столбцов массива: ");
+        b = in.nextInt();
 
-        for (int i = 0; i < a; i++) {
-            twoDimArray[a] = new int[]{i};
+
+        int[][] arr = new int[a][b];
+
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print("Введите элемент arr[" + i + "][" + j + "]:");
+                arr[i][j] = in.nextInt();
+            }
         }
+        in.close();
 
-
-        for (int i = 0; i < twoDimArray.length; i++) {
-            for (int j = 0; j < twoDimArray[i].length; j++) {
-                System.out.print(" " + twoDimArray[i][j] + " ");
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i] [j] * 3 + "\t");
+                if (arr[i][j] > MAXVALUE) {
+                    sum += arr[i ][j];
+                    count++;
+                }
             }
             System.out.println();
         }
