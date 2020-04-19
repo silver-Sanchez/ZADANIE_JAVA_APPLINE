@@ -11,15 +11,15 @@ public class massiv {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         ArrayList<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 2; i++)
         {
-            list.add(Integer.parseInt(reader.readLine())); 
+            list.add(Integer.parseInt(reader.readLine()));
         }
-        for (int c = 9; c >=0; c--)
+        for (int c = 0; c < 2; c++)
         {
-            System.out.println(list.get(c));
+            System.out.println(list.get(c) *2);
         }
 
     }
 }
-}
+
