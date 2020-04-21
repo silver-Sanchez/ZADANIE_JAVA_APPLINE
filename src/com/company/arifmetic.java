@@ -7,14 +7,16 @@ public class arifmetic {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Введите число x");
-        int x = Integer.parseInt(reader.readLine());
+        double x = Integer.parseInt(reader.readLine());
         System.out.println("Введите число y 2");
-        int y = Integer.parseInt(reader.readLine());
+        double y = Integer.parseInt(reader.readLine());
         System.out.println("Введите число3 z 3");
-        int z = Integer.parseInt(reader.readLine());
+        double z = Integer.parseInt(reader.readLine());
 
-        int d = x + y + z;
-        int f = d / 3;
+
+
+        double d = x + y + z;
+        double f = d / 3;
 
         System.out.println("число x = " + x + "число y = " + y + "число z = " + z );
         System.out.println("среднего арифметического чисел x, y, z = " + f );
