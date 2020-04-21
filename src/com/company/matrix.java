@@ -39,7 +39,7 @@ public class matrix {
         }
 
 
-        System.out.println("Утроенные элементы первой строки матрицы");
+        System.out.println("умножение");
 
         for (int j = 0; j < arr[0].length; j++) {
             int tripledArrItem = arr[0][j] * 3;
