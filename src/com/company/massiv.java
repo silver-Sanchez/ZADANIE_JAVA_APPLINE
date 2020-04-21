@@ -12,17 +12,24 @@ public class massiv {
         System.out.println("Введите размер массива");
         int a = Integer.parseInt(reader.readLine());
         System.out.println("Введите числа в массив равный " + a);
-        ArrayList<Integer> list = new ArrayList<>();
 
-        for (int i = 0; i < a; i++)
         {
-            list.add(Integer.parseInt(reader.readLine()));
-        }
-        for (int c = 0; c < a; c++)
-        {
-            System.out.println(list.get(c) *2);
-        }
+            int[] list = new int[a];
 
+            //заполняем
+            for (int i = 0; i < list.length; i++)
+                list[i] = Integer.parseInt(reader.readLine());
+
+            //вывод на экран
+
+          //  System.out.println(list[0] *2);
+
+           for (int i = 0; i < list.length; i++)
+               System.out.println(list[i] * 2);
+
+        }
     }
+
+
 }
 
