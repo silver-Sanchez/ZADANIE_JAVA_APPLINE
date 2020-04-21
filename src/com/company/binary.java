@@ -1,23 +1,22 @@
 package com.company;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.util.Scanner;
 
 public class binary {
 
-    public static void main(String args[]) throws IOException {
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Введите число");
-        String str = reader.readLine();
+    public static void main(String[] args) {
 
-        int n = 0;
-        for (int i = 0; i < str.length(); i++) {
-            n <<= 1;
-            if (str.charAt(i) == '1') n++;
+        System.out.println("Введите число в бинарном виде");
+        Scanner in = new Scanner(System.in);
+        String num = in.nextLine();
 
+        try {
 
-            System.out.println("\"" + str + "\" -> " + n);
+            int number = Integer.parseInt(num, 2);
+            System.out.println(number);
+        }
+        catch (NumberFormatException ex){
+
+            System.out.printf("строка %s не соотвествует бинарному формату 1 и 0.", num);
         }
     }
-
 }
