@@ -21,11 +21,18 @@ public class dlinnastring {
         int len1 = name2.length();
 
 
+
         if (name1.equals(name2)==true && len2==len1)
             System.out.println("Длины слов равны");
+
         else
         {
-            System.out.println("Длины НЕ слов равны");
+            if (name1.equals(name2)==true && len2>len1)
+                System.out.println("слово " + name1 + " больше");
+            else
+            {
+                System.out.println("слово " + name2 + " больше");
+            }
         }
     }
 }
