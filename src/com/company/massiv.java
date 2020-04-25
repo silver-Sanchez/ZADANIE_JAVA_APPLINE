@@ -18,7 +18,7 @@ public class massiv {
 
             //заполняем
             for (int i = 0; i < list.length; i++)
-                list[i] = Integer.parseInt(reader.readLine()); 
+                list[i] = Integer.parseInt(reader.readLine());
 
             //вывод на экран
 
