@@ -16,7 +16,7 @@ public class dlinnastring {
 
         String name1 = reader.readLine();
 
-        System.out.println("введи слово второе слово для сравнения");
+        System.out.println("введи второе слово для сравнения");
         String name2 = reader.readLine();
 
 
@@ -26,7 +26,7 @@ public class dlinnastring {
 
         } else if (name2.length() > name1.length()){
 
-            System.out.println(name2);
+            System.out.println("слово " + name2 + " больше");
         } else {
 
             System.out.println("Длины строк равны");
