@@ -15,24 +15,20 @@ public class dlinnastring {
         System.out.println("введи слово второе слово для сравнения");
         String name2 = reader.readLine();
 
-;
-        int len2 = name1.length();
-
-        int len1 = name2.length();
 
 
+        if (name1.length() > name2.length()){
+            System.out.println(name1);
 
-        if (name1.equals(name2)==true && len2==len1)
-            System.out.println("Длины слов равны");
+        } else if (name2.length() > name1.length()){
 
-        else
-        {
-            if (name1.equals(name2)==true && len2>len1)
-                System.out.println("слово " + name1 + " больше");
-            else
-            {
-                System.out.println("слово " + name2 + " больше");
-            }
+            System.out.println(name2);
+        } else {
+
+            System.out.println("Длины строк равны");
         }
+
+
+
     }
 }
