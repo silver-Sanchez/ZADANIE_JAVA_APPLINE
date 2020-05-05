@@ -16,7 +16,7 @@ public class zapisfile {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("хочешь закончит? введи стоп");
 
-        
+
         String str = null;
 
         try (FileWriter writer = new FileWriter("./get_hi.txt", true)) {
