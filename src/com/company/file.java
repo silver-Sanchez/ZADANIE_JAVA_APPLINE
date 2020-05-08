@@ -13,9 +13,10 @@ public class file {
                         new FileInputStream("./text.txt"), StandardCharsets.UTF_8))) {
             String line;
             while ((line = reader.readLine()) != null) {
+
                 System.out.println(line);
             }
-
+ 
         } catch (IOException e) {
 
             e.printStackTrace();
