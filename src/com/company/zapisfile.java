@@ -22,7 +22,7 @@ public class zapisfile {
         try (FileWriter writer = new FileWriter("./get_hi.txt", true)) {
             while (!"стоп".equals(str)) {
                 str = reader.readLine();
-                writer.write(str);
+                writer.write(str  + "\n");
             }
             writer.flush();
         } catch (IOException ex) {
