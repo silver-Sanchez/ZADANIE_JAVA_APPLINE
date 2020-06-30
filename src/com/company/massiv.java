@@ -28,6 +28,7 @@ public class massiv {
                System.out.println(list[i] * 2);
 
         }
+        
     }
 
 
